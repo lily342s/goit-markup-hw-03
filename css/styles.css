@@ -34,6 +34,18 @@ body {
   font-size: 14px;
 }
 
+/* Common */
+
+.container {
+  width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  outline: 2px solid tomato;
+}
+
 /* Лого WebStudio */
 
 .logo {
@@ -54,6 +66,10 @@ body {
 }
 
 /* Site-nav */
+
+.site-nav {
+  display: flex;
+}
 
 .site-nav .link {
   color: var(--title-text-color);
@@ -107,9 +123,12 @@ body {
 .hero-button {
   /* font-family: inherit; */
   /* font-style: normal; */
+  display: inline-block;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+
+  padding: 10px, 32px;
   /* display: flex;
   align-items: center; */
   /* text-align: center; */
