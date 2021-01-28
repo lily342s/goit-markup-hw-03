@@ -19,6 +19,8 @@
 }
 
 body {
+  /* автоматичний марджин 0 примінився від нормалайз */
+  /* margin: 0; */
   background-color: var(--primary-bg-color);
   color: var(--primary-text-color);
 
@@ -27,6 +29,8 @@ body {
 
 /* Стили для index.html */
 
+/* Common */
+
 .list {
   list-style: none;
   font-style: normal;
@@ -34,7 +38,9 @@ body {
   font-size: 14px;
 }
 
-/* Common */
+h1 {
+  margin: 0;
+}
 
 .container {
   width: 1200px;
@@ -52,15 +58,12 @@ body {
 
 /* Лого WebStudio */
 
-.page-header > .container {
-  display: flex;
-  align-items: center;
-}
-
+.page-header > .container,
 .links {
   display: flex;
   align-items: center;
 }
+
 .logo {
   margin-right: 93px;
 
@@ -86,10 +89,6 @@ body {
   display: flex;
   padding-left: 0;
 }
-
-/* .item {
-  display: block;
-} */
 
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
@@ -143,15 +142,19 @@ body {
 /* Эффективные решения для вашего бизнеса */
 
 .hero {
-  background-color: var(--bg-footer-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   text-align: center;
+
+  background-color: var(--bg-footer-color);
 }
 
 .hero .hero-title {
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  /* text-align: center; */
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
@@ -161,18 +164,25 @@ body {
 /* Button */
 
 .hero-button {
-  /* font-family: inherit; */
-  /* font-style: normal; */
+  font-family: inherit;
+  font-style: normal;
   display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-weight: 700;
+  border-style: none;
+  outline: none;
   font-size: 16px;
   line-height: 1.88;
+  cursor: pointer;
 
-  padding: 10px, 32px;
   /* display: flex;
   align-items: center; */
   /* text-align: center; */
-  letter-spacing: 0.06em;
+  /* letter-spacing: 0.06em; */
 
   color: var(--primary-bg-color);
   background-color: var(--accent-color);
