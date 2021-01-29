@@ -38,7 +38,11 @@ body {
   font-size: 14px;
 }
 
-h1 {
+h1,
+h2,
+h3,
+p,
+ul {
   margin: 0;
 }
 
@@ -54,6 +58,7 @@ h1 {
   padding: 0 15px; */
 
   outline: 2px solid tomato;
+  background-color: yellowgreen;
 }
 
 /* Лого WebStudio */
@@ -88,6 +93,8 @@ h1 {
 .site-nav {
   display: flex;
   padding-left: 0;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
 }
 
 .site-nav .item:not(:last-child) {
@@ -95,6 +102,10 @@ h1 {
 }
 
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
 }
 
@@ -135,6 +146,10 @@ h1 {
 }
 
 .contacts-list .contact {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-style: normal;
 }
@@ -190,7 +205,37 @@ h1 {
 
 /* Наши преимущества */
 
-.section-features .title {
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.feature-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.feature-list .item {
+  width: 270px;
+}
+
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.section-features {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+/* .section-features .title  */
+
+.feature-list .title {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
